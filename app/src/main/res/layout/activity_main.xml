@@ -9,6 +9,16 @@
     android:background="@drawable/bg">
 
     <Button
+        android:id="@+id/manageItems"
+        android:layout_width="199dp"
+        android:layout_height="126dp"
+        android:layout_above="@+id/btnScanBarcode"
+        android:layout_marginBottom="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:text="Manage Items" />
+
+    <Button
         android:id="@+id/btnTakePicture"
         android:layout_width="199dp"
         android:layout_height="126dp"
@@ -23,7 +33,6 @@
         android:layout_height="126dp"
         android:layout_centerInParent="true"
         android:background="@drawable/custom_button"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="@string/scan_barcode" />
 
 </RelativeLayout>
