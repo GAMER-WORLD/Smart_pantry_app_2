@@ -5,23 +5,25 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
-
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg">
 
     <Button
         android:id="@+id/btnTakePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="199dp"
+        android:layout_height="126dp"
+        android:layout_below="@+id/btnScanBarcode"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/take_barcode_picture" />
+        android:background="@drawable/custom_button"
+        android:text="Take Barcode Pic" />
 
     <Button
         android:id="@+id/btnScanBarcode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnTakePicture"
-        android:layout_centerHorizontal="true"
+        android:layout_width="199dp"
+        android:layout_height="126dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_button"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:text="@string/scan_barcode" />
+
 </RelativeLayout>

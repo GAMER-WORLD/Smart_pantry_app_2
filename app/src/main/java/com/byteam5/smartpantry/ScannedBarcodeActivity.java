@@ -111,7 +111,7 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
         barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
             public void release() {
-                Toast.makeText(getApplicationContext(), "To prevent memory leaks barcode scanner has been stopped", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
             }
 
             @Override
@@ -130,10 +130,10 @@ public class ScannedBarcodeActivity extends AppCompatActivity {
                                 intentData = barcodes.valueAt(0).email.address;
                                 txtBarcodeValue.setText(intentData);
                                 isEmail = true;
-                                btnAction.setText("ADD CONTENT TO THE MAIL");
+                                btnAction.setText("ADD ITEM TO PANTRY");
                             } else {
                                 isEmail = false;
-                                btnAction.setText("LAUNCH URL");
+                                btnAction.setText("ADD ITEM TO PANTRY");
                                 intentData = barcodes.valueAt(0).displayValue;
                                 txtBarcodeValue.setText(intentData);
 
